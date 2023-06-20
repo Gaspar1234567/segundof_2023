@@ -174,3 +174,116 @@ Index css
     </footer>
 </body>
 </html>
+{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(5, 3, 83);
+}
+.item {
+    width: 60px;
+    height: 90px;
+    background-color: rgb(152, 141, 216);
+    color: black;
+    margin: 10px;
+}
+.conteudo{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+
+}
+.barra {
+    background-color: rgb(61, 121, 199);
+    height: 20vh;
+    grid-area: barra;
+}
+.principal{
+    background-color: rgb(236, 143, 197);
+    height: 60vh;
+    grid-area: principal;
+}
+.lado{
+    background-color: rgb(165, 165, 209);
+    height: 60vh;
+    grid-area: lado;
+}
+.rodape{
+    background-color: rgb(149, 67, 187);
+    height: 20vh;
+    grid-area: rodape;
+}
+.meu-site {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas:
+                   "barra barra"
+                   "lado principal"
+                   "rodape rodape";
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.header{
+    width: 100%;
+    background: rgb(191, 136, 212);
+    position: sticky;
+    top: 0;
+}
+.logo {
+    display: inline-block;
+    background-color: blueviolet;
+}
+#logo {
+    width: 10vh;
+    margin: 5px;
+}
+.nav {
+    width: 100%;
+    margin: 100%;
+    position: fixed;
+    background-color: blueviolet;
+    overflow: hidden;
+}
+.menu a {
+    display: block;
+    padding: 30px;
+    color: white;
+}
+.menu a:hover {
+    background-color: black;
+}
+.conteudo{
+    width: 100%;
+}
+.rodape{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(106, 28, 109);
+}
+.img-mobile{
+    width: 100%;
+}
+@media screen and (min-width: 768px) {
+    .menu{
+        height: 100px;
+        background-color: rgb(21, 119, 122);
+    }
+    .conteudo-home{
+        display: flex;
+        
+    }
+}
+@media screen and (min-width: 1280px){
+    .menu{
+        height: 150px;
+        background-color: rgb(170, 95, 117);
+   }
+}
